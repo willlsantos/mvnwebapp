@@ -24,4 +24,4 @@ jobs:
       run: mvn -B package --file pom.xml
     - run: mkdir deployment && cp target/*.war deployment
     - run: pwd && ls && ls target/* && ls deployment/*
-    - run: curl --upload-file deployment/mvnwebapp.war "http://deployer:deployer@192.168.15.118:8085/manager/text/deploy?path=/githubaction&update=true"
+    - run: curl --upload-file deployment/mvnwebapp.war "http://deployer:deployer@189.79.10.80:8085/manager/text/deploy?path=/githubaction&update=true"
